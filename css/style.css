@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2? family= Libre+Baskerville & display=swap');
+
+/* reset con selector universal para sacar estilos por defecto*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    box-sizing: border-box;
+}
+
+/*menu nav*/
+
+.logo {
+    width: 122px;
+    height: 78px;
+    display: flex;
+    align-items: start;
+}
+
+nav ul {
+    align-items: center;
+}
+
+nav ul a {
+    font-size: 18px;
+    font-weight: bold;
+    transition: .7s;
+}
+
+nav ul a:hover {
+   font-size: 24px;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+/* main*/
+
+main {
+    min-width: 100vh;
+    max-height: 100%;
+    background-color: rgb(1, 66, 124);
+    padding: 15px;
+    margin-top: 100px;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+div {
+    overflow: hidden;
+}
+
+p {
+    text-decoration: none;
+    color: white;    
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* viñetas de listas */
+ul {
+    list-style-type: none;
+    text-align: left;
+    object-fit: cover;
+    position: relative;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    color: white;
+    text-align: left;
+    object-fit: cover;
+}
+
+/* selectores de clases*/
+
+.titulo {
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+.imagen_center {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+.imagen_linkedin {
+    width: 25px;
+    height: 25px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.grilla {
+    display: flex;
+    flex-direction: row;
+    display: grid;    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card-grid {
+    gap: 10px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.card-grid-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 5%;
+    transition: 0.7s;
+}
+
+.card-grid-img:hover {
+    box-shadow: 5px 5px 5px 5px #303030;
+}
+
+.caja-titulo {
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.caja-content {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    gap: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.box-grid {
+    width: 600px;
+    height: 750px;
+}
+
+.box-grid-img {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+    border-radius: 5%;
+}
+
+.box-content {
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px;
+} 
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact {
+    text-decoration: none;
+    color: yellow;
+    width: 550px;
+    height: 550px;
+}
+
+/* mediaqueries */
+@media screen and (max-width:768px) {
+    .box {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .box-grid {
+        width: 600px;
+        height: 600px;
+    }
+        .box-grid-img {
+        width: 300px;
+        height: 300px;
+        margin-left: 150px ;
+    }
+    p {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .caja-titulo {
+        font-size: 18px;
+    }
+    .carousel-inner {
+        height: 300px;
+    }
+    h3 {
+        font-size: 12px;
+        text-align: left;
+    }
+    .card-grid {
+        width: 240px;
+        height: 240px;
+    }
+    .card-grid-img {
+        width: 200px;
+        height: 200px;
+    }    
+    .card-grid-img:hover {
+        box-shadow: 2px 2px 2px 2px #303030;
+    }    
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(221, 23, 42);
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+footer a {
+    padding: 10px 20px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: white;
+    border: solid 3px white;
+    border-radius: 10px;
+}
