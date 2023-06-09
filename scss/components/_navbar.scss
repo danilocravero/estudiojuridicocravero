@@ -1,0 +1,29 @@
+/*menu nav*/
+
+nav {
+
+    .logo {
+        width: 122px;
+        height: 78px;
+        display: flex;
+        align-items: start;
+    }
+
+    ul {
+        align-items: center;
+
+        a {
+            font-size: 18px;
+            font-weight: bold;
+            transition: .7s;
+
+            &:hover {
+                font-size: 24px;
+            }
+        }
+
+        .carousel-item {
+            height: 600px;
+        }
+    }
+}

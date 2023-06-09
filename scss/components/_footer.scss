@@ -1,0 +1,20 @@
+/* footer */
+
+footer {
+    background-color:$footer-color;
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+footer a {
+    padding: 10px 20px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color:$light-color;
+    border: solid 3px$light-color;
+    border-radius: 10px;
+}

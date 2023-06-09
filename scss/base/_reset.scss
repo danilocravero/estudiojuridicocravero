@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2? family= Libre+Baskerville & display=swap');
+
+/* reset con selector universal para sacar estilos por defecto*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    box-sizing: border-box;
+}
