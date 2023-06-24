@@ -41,6 +41,10 @@
     .carousel-inner {
         height: 300px;
     }
+    
+    h1 {
+        font-size: 28px;
+    }
 
     h2 {
         font-size: 20px;
@@ -54,7 +58,7 @@
         width: 400px;
         height: 400px;
 
-        &.card-grid-img {
+        .card-grid-img {
             width: 250px;
             height: 250px;
 
